@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package leafservice;
+
+// The leaf service definition.
+service LeafService {
+  // Sends a leaf and receives a list of strings
+  rpc ProcessLeaf (LeafRequest) returns (PathResponse) {}
+
+  // Sends a list of strings, no response needed
+  rpc SendPath (PathRequest) returns (EmptyResponse) {}
+}
+
+// The request message containing a leaf.
+message LeafRequest {
+  int32 leaf = 1;
+}
+
+// The response message containing a list of strings.
+message PathResponse {
+  repeated string strings = 1;
+}
+
+// The request message containing a list of strings.
+message PathRequest {
+  repeated string strings = 1;
+}
+
+// An empty response message.
+message EmptyResponse {}
