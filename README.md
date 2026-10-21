@@ -6,7 +6,6 @@ It measures what the EMM's queue-based query processing (the *EXH* mode) costs i
 latency and queue size under Poisson query arrivals, with a Path ORAM storage server
 as the back end.
 
-The code was written during my 2023–2024 research internship at Northeastern University.
 The EMM design itself is described in the paper; this repository holds the benchmark
 driver, the storage server, the raw measurements and the plotting script.
 
