@@ -1,0 +1,29 @@
+# Visual Studio / MSBuild output
+.vs/
+x64/
+Debug/
+Release/
+*.user
+*.suo
+*.obj
+*.pdb
+*.ilk
+*.iobj
+*.ipdb
+*.idb
+*.tlog
+*.log
+*.recipe
+*.sarif
+*.exe
+*.dll
+
+# Local datasets and serialized ORAM state (too large to version)
+MM/
+serialized_data.bin
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
